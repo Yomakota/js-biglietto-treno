@@ -28,5 +28,6 @@ if (age < 18) {
 
 }
 
+
 // L’output del prezzo finale va messo fuori in forma umana(con massimo due decimali, per indicare centesimi sul prezzo)
-document.getElementById("ticket_price").innerHTML = "<h1>Il prezzo finale del biglietto è di " + ticket_price.toFixed(2) + " €.</h1>";
+document.getElementById('ticket_price').innerHTML = `<h1>Il prezzo finale del biglietto è di ${ticket_price.toFixed(2)} €.</h1>`;
