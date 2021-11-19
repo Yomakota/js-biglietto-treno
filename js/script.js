@@ -14,18 +14,20 @@ let age = parseInt(prompt ("insert your age"));
 // biglietto senza sconti
 let ticket_price = km * 0.21;
 
+// va applicato uno sconto del 20 % per i minorenni.
 if (age < 18) {
     
-    ticket_price = ticket_price - ticket_price * 20 / 100;
+    ticket_price = ticket_price - (ticket_price * 20 / 100);
 
+// va applicato uno sconto del 40 % per gli over 65.
 } else if (age > 64) {
 
-    ticket_price = ticket_price - ticket_price * 40 / 100;
+    ticket_price = ticket_price - (ticket_price * 40 / 100);
 
 } else {
-
 
 }
 
 
-document.getElementById("ticket_price").innerHTML = ticket_price;
+// L’output del prezzo finale va messo fuori in forma umana(con massimo due decimali, per indicare centesimi sul prezzo)
+document.getElementById("ticket_price").innerHTML = "<h1>Il prezzo finale del biglietto è di " + ticket_price + " €.</h1>";
