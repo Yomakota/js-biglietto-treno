@@ -6,10 +6,10 @@
 // L’output del prezzo finale va messo fuori in forma umana(con massimo due decimali, per indicare centesimi sul prezzo).Questo richiederà un minimo di ricerca.
 
 // chiedere all'utente il numero di km che vuole percorrere
-let km = prompt ("insert travel distance");
+let km = parseInt(prompt ("insert travel distance"));
 
 // chieder età all'utente
-let age = prompt ("insert your age");
+let age = parseInt(prompt ("insert your age"));
 
 // biglietto senza sconti
 let ticket_price = km * 0.21;
